@@ -1,0 +1,25 @@
+{
+  "manifestVersion": 2,
+  "id": "care-lens",
+  "name": "Care Lens",
+  "version": "0.1.0",
+  "publisher": "christinaxvg",
+  "license": "MIT",
+  "description": "Review a screen for potential barriers across accessibility, clarity, sensory load, user control, and privacy.",
+  "engines": {
+    "orca": ">=1.4.246"
+  },
+  "execution": "sandboxed-ui",
+  "pluginApi": 1,
+  "contributes": {
+    "panels": [
+      {
+        "id": "care-lens",
+        "title": "Care Lens",
+        "icon": "search",
+        "entry": "src/panel.tsx",
+        "ui": "components"
+      }
+    ]
+  }
+}
